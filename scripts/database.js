@@ -65,3 +65,6 @@ const database = {
 export const GetCategories = () => {
   return database.categories
 }
+export const getArticles = () => {
+  return database.articles
+}
