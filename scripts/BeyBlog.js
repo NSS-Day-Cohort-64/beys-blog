@@ -1,8 +1,11 @@
+import { ListCategories } from "./categories.js";
 import { articleList } from "./articles.js";
 
+
 export const BeyBlog = () => {
+    const categories = ListCategories()
     const articles = articleList()
-  return `
+    return `
         <article class="authors column">
             <h2>Authors</h2>
         </article>
@@ -12,6 +15,7 @@ export const BeyBlog = () => {
         </article>
         <article class="categories column">
             <h2>Categories</h2>
+            ${categories}
         </article>
     `;
 };
