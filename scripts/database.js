@@ -61,3 +61,7 @@ const database = {
     { id: 3, name: "Music" }
   ]
 };
+
+export const GetCategories = () => {
+  return database.categories
+}
